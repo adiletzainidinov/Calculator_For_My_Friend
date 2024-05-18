@@ -189,9 +189,9 @@ function App() {
         type="number"
         value={currentAmount}
         onChange={handleInputChange}
-        placeholder="Enter amount"
+        placeholder="Напишите сумму"
       />
-      <Button onClick={handleInputClick}>Add</Button>
+      <Button onClick={handleInputClick}>Добавить</Button>
       {results.length > 0 && (
         <StyledTable>
           <Thead>
@@ -210,19 +210,19 @@ function App() {
               <tr key={index} className="active-row">
                 <Td data-label="Сумма грязная">{amounts[index]}</Td>
                 <Td data-label="Процент">{result.percentage}%</Td>
-                <Td data-label="Процент сумма">
+                <Td data-label="Заработок водителя">
                   {result.percentageAmount.toFixed(2)}
                 </Td>
-                <Td data-label="Дневные вычитания">
+                <Td data-label="Бензин">
                   {result.dailyReductions.join(', ')}
                 </Td>
-                <Td data-label="День">{result.days} день</Td>
+                <Td data-label="Период">{result.days} день</Td>
                 <Td
                   data-label="Итоговая прибыль"
                 >
                   {result.finalProfit.toFixed(2)}
                 </Td>
-                <Td data-label="Delete">
+                <Td data-label="Удаление">
                   <Button onClick={() => handleDeleteRow(index)}>Удалить</Button>
                 </Td>
               </tr>
