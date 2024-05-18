@@ -122,7 +122,7 @@ function App() {
     if (sum > 4900 && sum <= 6500) return 40;
     if (sum > 3700 && sum <= 4900) return 35;
     if (sum > 2700 && sum <= 3700) return 30;
-    if (sum > 2200 && sum <= 2200) return 25;
+    if (sum > 2200 && sum <= 2700) return 25;
     if (sum <= 2200) return 20;
 
     return 0;
